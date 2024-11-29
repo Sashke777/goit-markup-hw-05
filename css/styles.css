@@ -551,6 +551,12 @@ img {
 }
 
 /* Modal window */
+:root {
+    --checked-bg-color: #404bbf;
+    --checked-fill-color: #F4F4FD;
+    --link-color: #4d5ae5;
+    --form-label-color: #8e8f99;
+}
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -694,6 +700,58 @@ textarea:focus {
 .modal-close:focus .icon,
 .form-submit:focus .icon {
     fill: #ffffff;
+}
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.form-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--label-color, #8e8f99);
+    display: flex;
+    align-items: center;
+}
+.checkbox-box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[type="checkbox"]:checked+label .checkbox-box {
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+input[type="checkbox"]:checked+label .checkbox-icon {
+    fill: #ffffff;
+}
+.checkbox-icon {
+    width: 10px;
+    height: 10px;
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Стилізація посилання */
+.privacy-link {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-link:hover {
+    color: #404bbf;
 }
 /* Дизайн кнопки */
 .form-submit {
