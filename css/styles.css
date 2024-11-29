@@ -546,11 +546,7 @@ img {
 }
 
 /* Modal title styles */
-.modal-container {
-    /* Added container div after footer */
-    margin-bottom: 8px;
-    /* As per point 2 */
-}
+
 .modal-title {
     font-weight: 500;
     font-size: 16px;
