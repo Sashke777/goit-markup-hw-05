@@ -622,7 +622,7 @@ body {
 }
 
 .form-group {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .form-label {
@@ -710,6 +710,7 @@ textarea:focus {
     pointer-events: none;
 }
 .form-label {
+    display: block;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -723,6 +724,7 @@ textarea:focus {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     display: inline-flex;
+    fill: transparent;
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -754,7 +756,7 @@ input[type="checkbox"]:checked+label .checkbox-icon {
     color: #404bbf;
 }
 /* Дизайн кнопки */
-.form-submit {
+.form-button-submit {
     display: block;
     width: 100%;
     max-width: 169px;
@@ -774,16 +776,16 @@ input[type="checkbox"]:checked+label .checkbox-icon {
     padding: 0;
 }
 
-.form-submit:hover {
+.form-button-submit:hover {
     background-color: #404bbf;
 }
 
-.form-submit:focus {
+.form-button-submit:focus {
     outline: 2px solid #4D5AE5;
     outline-offset: 2px;
 }
 
-.form-submit:disabled {
+.form-button-submit:disabled {
     background-color: #8e8f99;
     cursor: not-allowed;
     opacity: 0.7;
