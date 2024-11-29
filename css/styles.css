@@ -485,6 +485,10 @@ img {
     height: 24px;
     fill: var(--icon-color, #f4f4fd);
 }
+/* Modal winodw */
+.modal-container {
+    margin-bottom: 8px;
+}
 
 /* Subscription container styles */
 .subscription-container {
